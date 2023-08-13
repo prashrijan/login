@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: helvetica, arial, sans-serif;
+    text-align: center;
+}
+
+.main{
+    background: linear-gradient(300deg, #4a02b6, #8a0685 , #016bbf);
+    background-size:100% 100% ;
+    animation: gradient-animation 18s ease infinite;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .login-container{
+    height: 500px;
+    width:360px;
+    background-color: rgb(242, 241, 239);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 6px;
+}
+
+.main .login-container h2{
+    font-size: 30px;
+    padding-top: 30px;
+    color: #272829;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+
+.main .login-container .input-items{
+    margin-left: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.main .login-container .input-items .mail, .login-container .input-items .pass{
+    width: 300px;
+    padding: 10px 20px 10px 40px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.main .login-container .input-items .email{
+    position: absolute;
+    top:14px;
+    left: 33px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.main .login-container .input-items .key{
+    position: absolute;
+    top:90px;
+    left: 33px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.main .login-container .lg-bttn{
+    width: 360px;
+    position: absolute;
+    padding-top: 3px;
+   
+}
+.main .login-container .lg-bttn .bttn{
+    height: 60px;
+    padding: 10px 10px 10px 10px;
+    width: 300px;
+    border: none;
+    background-color: #be0ab8;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.help{
+    position: relative;
+}
+.main .login-container a{
+    position: absolute;
+    top:80px;
+    font-size: 14px;
+    margin-left: 30px;
+    color: #4a02b6;
+    text-decoration: none;
+}
+
+.main .login-container .chkbox{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main .login-container .optional{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap:20px;
+}
+
+.main .login-container .optional button{
+    padding: 15px 20px 15px 20px;
+    width: auto;
+    border: none;
+    background-color: rgb(227, 227, 227);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.main .login-container .optional button svg{
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.main .login-container .text{
+    position: relative;
+    top:110px;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: gainsboro;
+    position: absolute;
+
+}
+
+.main .login-container .optional button:hover{
+    background-color: rgb(139, 139, 139);
+    transition: 0.5s;
+}
+
+.main .login-container .lg-bttn .bttn:hover{
+    background-color: #6f056c;
+    transition: 0.5s;
+    position: relative;
+}
+
+.main .cross{
+    position: absolute;
+    top: 165px;
+    right: 140px;
+    color: #ba08f1;
+}
+
